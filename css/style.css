@@ -195,6 +195,8 @@ body {
 
 .header {
   background-color: #fff;
+  z-index: 8;
+  position: relative;
 }
 
 .header__top {
@@ -622,7 +624,6 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#d9d9d9), color-stop(46.35%, #ffffff));
   background: -o-linear-gradient(left, #d9d9d9 0%, #ffffff 46.35%);
   background: linear-gradient(90deg, #d9d9d9 0%, #ffffff 46.35%);
-  z-index: 9;
   position: relative;
 }
 
@@ -1053,6 +1054,20 @@ body {
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+  -webkit-transform: translate(0, -50px);
+      -ms-transform: translate(0, -50px);
+          transform: translate(0, -50px);
+  opacity: 0;
+}
+
+._watcher-view .services__title {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .services__items {
@@ -1103,7 +1118,7 @@ body {
 }
 
 .item-services:first-child {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .item-services:first-child .item-services__btn {
@@ -1116,19 +1131,19 @@ body {
 }
 
 .item-services:nth-child(2) {
-  background-color: #3797FF;
+  background-color: #3797ff;
   color: #fff;
 }
 
 .item-services:nth-child(3) {
-  background: -o-radial-gradient(50% 50%, 50% 50%, rgba(63, 151, 255, 0.82) 0%, #1949F5 100%);
-  background: radial-gradient(50% 50% at 50% 50%, rgba(63, 151, 255, 0.82) 0%, #1949F5 100%);
+  background: -o-radial-gradient(50% 50%, 50% 50%, rgba(63, 151, 255, 0.82) 0%, #1949f5 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(63, 151, 255, 0.82) 0%, #1949f5 100%);
   color: #fff;
 }
 
 .item-services:nth-child(4) {
-  background: -o-radial-gradient(50% 50%, 50% 50%, #153DCE 0%, #000A2C 100%);
-  background: radial-gradient(50% 50% at 50% 50%, #153DCE 0%, #000A2C 100%);
+  background: -o-radial-gradient(50% 50%, 50% 50%, #153dce 0%, #000a2c 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #153dce 0%, #000a2c 100%);
   color: #fff;
 }
 
@@ -1244,7 +1259,7 @@ body {
 }
 
 .profile {
-  z-index: 9;
+  z-index: 7;
   position: relative;
   background: #fcfcfc;
 }
@@ -1545,7 +1560,7 @@ body {
 
 .register {
   background-color: #f4f4f5;
-  z-index: 9;
+  z-index: 7;
   position: relative;
 }
 
@@ -1851,7 +1866,7 @@ body {
   }
 
   .promo__container {
-    max-width: 100%;
+    max-width: 120rem;
   }
 }
 
@@ -2485,7 +2500,7 @@ body {
 
   .menu__body {
     position: fixed;
-    top: 0;
+    top: -65px;
     left: 0;
     width: 100%;
     background-color: #fff;
