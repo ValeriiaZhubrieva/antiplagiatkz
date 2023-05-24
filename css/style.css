@@ -601,6 +601,9 @@ body {
 .footer__copy-link {
   color: rgba(0, 0, 0, 0.75);
   opacity: 0.85;
+  -webkit-transition: text-shadow 0.3s ease 0s;
+  -o-transition: text-shadow 0.3s ease 0s;
+  transition: text-shadow 0.3s ease 0s;
 }
 
 .menu-footer__list {
@@ -1127,7 +1130,7 @@ body {
 }
 
 .item-services:first-child .item-services__btn {
-  background-color: #2881E1;
+  background-color: #3596FF;
   color: #fff;
 }
 
@@ -1493,7 +1496,7 @@ body {
 }
 
 .breadcrumbs__item.active {
-  color: #2881E1;
+  color: #0A89FF;
 }
 
 .body-profile {
@@ -1548,7 +1551,7 @@ body {
           align-items: center;
   font-weight: 500;
   padding: 1.5625rem 3.125rem;
-  border: 2px solid #2881E1;
+  border: 2px solid #2997FF;
   border-radius: 11px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3770,6 +3773,10 @@ body {
 
   .footer__soc:hover svg path {
     fill: #2881E1;
+  }
+
+  .footer__copy-link:hover {
+    text-shadow: 0 0 0.65px #1C1C1C, 0 0 0.65px #1C1C1C;
   }
 
   .menu-footer__link:hover {
