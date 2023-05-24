@@ -823,7 +823,7 @@ body {
 }
 
 .page__benefits {
-  z-index: 9;
+  z-index: 7;
   position: relative;
 }
 
@@ -906,7 +906,7 @@ body {
 }
 
 .ability {
-  z-index: 9;
+  z-index: 7;
   position: relative;
 }
 
@@ -1046,7 +1046,7 @@ body {
 }
 
 .page__services {
-  z-index: 9;
+  z-index: 7;
   position: relative;
 }
 
