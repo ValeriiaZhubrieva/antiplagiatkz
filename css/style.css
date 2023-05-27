@@ -1873,6 +1873,10 @@ body {
 }
 
 @media (min-width: 61.99875em) {
+  .wrapper-home .header {
+    margin-bottom: 1.875rem;
+  }
+
   .header__top-info {
     padding: 0.3125rem 0;
   }
