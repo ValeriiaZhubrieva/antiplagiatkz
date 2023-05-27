@@ -1239,7 +1239,8 @@ body {
 
 .item-services__val span:not(:last-child) {
   border-bottom: 1px solid;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 0.625rem;
+  font-size: 0.9375rem;
 }
 
 .item-services__btn {
@@ -1852,15 +1853,19 @@ body {
   display: none !important;
 }
 
-@media (min-width: 47.99875em) and (min-width: 107.5em) {
-  .swiper-pagination {
-    bottom: 5rem;
+@media (min-width: 47.99875em) {
+  .footer__logo {
+    margin-left: 2.5rem;
+  }
+
+  .benefits__item:not(:last-child) {
+    border-right: 1px solid rgba(8, 16, 47, 0.59);
   }
 }
 
-@media (min-width: 47.99875em) {
-  .benefits__item:not(:last-child) {
-    border-right: 1px solid rgba(8, 16, 47, 0.59);
+@media (min-width: 47.99875em) and (min-width: 107.5em) {
+  .swiper-pagination {
+    bottom: 5rem;
   }
 }
 
