@@ -1855,7 +1855,7 @@ body {
 
 @media (min-width: 47.99875em) {
   .footer__logo {
-    margin-left: 2.5rem;
+    margin-left: -2.5rem;
   }
 
   .benefits__item:not(:last-child) {
