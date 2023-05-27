@@ -1237,10 +1237,13 @@ body {
           flex-direction: column;
 }
 
+.item-services__val span {
+  font-size: 0.9375rem;
+}
+
 .item-services__val span:not(:last-child) {
   border-bottom: 1px solid;
   padding-bottom: 0.625rem;
-  font-size: 0.9375rem;
 }
 
 .item-services__btn {
