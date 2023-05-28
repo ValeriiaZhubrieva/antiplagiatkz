@@ -3402,7 +3402,7 @@
         mouseCoords(e);
         cursor.classList.add("hidden");
     }));
-    window["FLS"] = true;
+    window["FLS"] = false;
     isWebp();
     addTouchClass();
     addLoadedClass();
