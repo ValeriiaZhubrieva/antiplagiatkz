@@ -1570,7 +1570,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 500;
   padding: 1.5625rem 3.125rem;
   border: 2px solid #2997FF;
   border-radius: 11px;
@@ -1600,8 +1599,8 @@ body {
 .register__inner {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(18.125rem, 48.125rem) minmax(18.125rem, 60rem);
-  grid-template-columns: minmax(18.125rem, 48.125rem) minmax(18.125rem, 60rem);
+  -ms-grid-columns: minmax(18.125rem, 50.625rem) minmax(18.125rem, 60rem);
+  grid-template-columns: minmax(18.125rem, 50.625rem) minmax(18.125rem, 60rem);
   gap: 1.875rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1619,10 +1618,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 48.125rem;
+  max-width: 50.625rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 1.875rem 0 0;
+  padding: 1.875rem 0 0 0;
   opacity: 0;
   -webkit-transform: translate(0, -50px);
       -ms-transform: translate(0, -50px);
@@ -1630,9 +1629,11 @@ body {
 }
 
 ._watcher-view .info-register {
-  -webkit-transition: all 3.3s ease 0s;
-  -o-transition: all 3.3s ease 0s;
-  transition: all 3.3s ease 0s;
+  -webkit-transition: opacity 3.3s ease 0s, -webkit-transform 3.3s ease 0s;
+  transition: opacity 3.3s ease 0s, -webkit-transform 3.3s ease 0s;
+  -o-transition: opacity 3.3s ease 0s, transform 3.3s ease 0s;
+  transition: opacity 3.3s ease 0s, transform 3.3s ease 0s;
+  transition: opacity 3.3s ease 0s, transform 3.3s ease 0s, -webkit-transform 3.3s ease 0s;
   opacity: 1;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
@@ -2227,6 +2228,12 @@ body {
   }
 }
 
+@media (min-width: 120em) {
+  .info-register {
+    margin-left: 5rem;
+  }
+}
+
 @media (max-width: 80em) {
   .services__items {
     -ms-grid-columns: (minmax(18.125rem, 1fr))[2];
@@ -2518,6 +2525,12 @@ body {
   }
 }
 
+@media (max-width: 108.125em) {
+  .info-register {
+    margin-left: 0.0000000625rem;
+  }
+}
+
 @media (max-width: 68.75em) {
   .body-register {
     padding-left: 1.875rem;
@@ -2726,6 +2739,7 @@ body {
     max-width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: 0;
   }
 
   .body-register {
@@ -3729,6 +3743,20 @@ body {
   .swiper-pagination {
     bottom: 1.875rem;
   }
+}
+
+@media (min-width: 108.125em) and (max-width: 120em) {
+@supports (margin-left: clamp( 0.0000000625rem , -45.5263151579rem  +  42.1052626316vw , 5rem )) {
+    .info-register {
+      margin-left: clamp( 0.0000000625rem , -45.5263151579rem  +  42.1052626316vw , 5rem );
+    }
+}
+
+@supports not (margin-left: clamp( 0.0000000625rem , -45.5263151579rem  +  42.1052626316vw , 5rem )) {
+    .info-register {
+      margin-left: calc(0.0000000625rem + 4.9999999375 * (100vw - 108.125rem) / 11.875);
+    }
+}
 }
 
 @media (min-width: 68.75em) and (max-width: 108.125em) {
